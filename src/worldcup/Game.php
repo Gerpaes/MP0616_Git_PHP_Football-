@@ -54,7 +54,11 @@ class Game {
     public function getSpecialEvents() {
         return [
             "goal",
+            "offside",
         ];
+    }
+    public function signalOffside() {
+        echo "signaling offside\n";
     }
 
     public function main() {
