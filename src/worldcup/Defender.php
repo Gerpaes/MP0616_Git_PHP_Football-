@@ -2,10 +2,16 @@
 
 namespace WorldCup;
 
-class Defender extends Player {
+class Defender extends Player
+{
     private $mark;
 
-    public function steal(Ball $ball) {
+    public function __construct($mark)
+    {
+        $this->$mark = $mark;
+    }
+    public function steal(Ball $ball)
+    {
         $effects = ["with fault", "without fault"];
         $effect = $effects[array_rand($effects)];
         echo "steals the ball $effect\n";
@@ -14,14 +20,16 @@ class Defender extends Player {
     /**
      * Get the mark
      */
-    public function isMark() {
+    public function isMark()
+    {
         return $this->mark;
     }
 
     /**
      * Set the mark
      */
-    public function setMark($mark) {
+    public function setMark($mark)
+    {
         $this->mark = $mark;
     }
 }
