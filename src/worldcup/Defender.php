@@ -3,7 +3,7 @@
 namespace WorldCup;
 
 class Defender {
-    public $mark;
+    private $mark;
 
     public function steal(Ball $ball) {
         $effects = ["with fault", "without fault"];

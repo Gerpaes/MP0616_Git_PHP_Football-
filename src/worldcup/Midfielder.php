@@ -6,7 +6,7 @@ namespace WorldCup;
  * Class to define the midfielder
  */
 class Midfielder extends Player {
-    private $vision;
+    protected $vision;
 
     /**
      * Get the vision

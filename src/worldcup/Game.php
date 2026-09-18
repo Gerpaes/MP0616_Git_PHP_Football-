@@ -11,10 +11,10 @@ $game->main();
  * Class to define the game
  */
 class Game {
-    public $field;
-    public $date;
-    public $ball;
-    public $teams;
+    private $field;
+    private $date;
+    private $ball;
+    private $teams;
 
     public function getField() {
         return $this->field;
