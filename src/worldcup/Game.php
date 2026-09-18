@@ -60,6 +60,12 @@ class Game {
 
     public function showYellowCard(){
         echo "showing yellow card\n";
+            "substitution",
+        ];
+    }
+
+    public function makeSubstitution() {
+        echo "making a substitution\n";
     }
 
     public function main() {
