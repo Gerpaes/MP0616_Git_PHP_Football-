@@ -54,7 +54,12 @@ class Game {
     public function getSpecialEvents() {
         return [
             "goal",
+            "yellow card",
         ];
+    }
+
+    public function showYellowCard(){
+        echo "showing yellow card\n";
     }
 
     public function main() {
