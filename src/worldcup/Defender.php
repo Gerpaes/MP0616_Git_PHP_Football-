@@ -2,7 +2,7 @@
 
 namespace WorldCup;
 
-class Defender {
+class Defender extends Player {
     private $mark;
 
     public function steal(Ball $ball) {
