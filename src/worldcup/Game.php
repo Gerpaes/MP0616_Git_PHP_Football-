@@ -54,7 +54,12 @@ class Game {
     public function getSpecialEvents() {
         return [
             "goal",
+            "substitution",
         ];
+    }
+
+    public function makeSubstitution() {
+        echo "making a substitution\n";
     }
 
     public function main() {
