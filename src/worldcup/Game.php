@@ -48,6 +48,15 @@ class Game {
         $this->teams = $teams;
     }
 
+    /**
+     * List of special match events players can trigger
+     */
+    public function getSpecialEvents() {
+        return [
+            "goal",
+        ];
+    }
+
     public function main() {
         echo "starting application\n";
         
