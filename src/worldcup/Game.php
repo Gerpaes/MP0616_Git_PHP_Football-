@@ -55,10 +55,21 @@ class Game {
         return [
             "goal",
             "offside",
+            "yellow card",
         ];
     }
     public function signalOffside() {
         echo "signaling offside\n";
+    }
+
+    public function showYellowCard(){
+        echo "showing yellow card\n";
+            "substitution",
+        ];
+    }
+
+    public function makeSubstitution() {
+        echo "making a substitution\n";
     }
 
     public function main() {
