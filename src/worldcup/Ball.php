@@ -1,14 +1,16 @@
 <?php
 
+namespace WorldCup;
+
 class Ball {
     private string $material;
 
     public function __construct(string $material) {
-        $this->material = $material;
+        $this->material = "leather";
     }
 
     public function move(): void {
-        echo "El balón de " . $this->material . " se está moviendo.\n";
+        echo "The " . $this->material . " ball is moving.\n";
     }
 
     public function getMaterial(): string {
