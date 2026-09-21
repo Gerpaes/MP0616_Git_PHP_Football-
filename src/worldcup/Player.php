@@ -12,7 +12,7 @@ namespace WorldCup;
         }
 
         public function passBall() {
-            echo "passing the ball";
+            echo "passing the ball\n";
 
         }
         
