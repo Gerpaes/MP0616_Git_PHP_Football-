@@ -3,7 +3,7 @@
 namespace WorldCup;
 
 /**
- * Class to define the goalkeeper
+ * Class to define the person
  */
 class Person  {
 
