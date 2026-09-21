@@ -9,8 +9,9 @@ class Forward extends Player
 {
     private $killer;
 
-    public function __construct($killer)
+    public function __construct(int $age, string $position, $killer)
     {
+        parent::__construct($age, $position);
         $this->$killer = $killer;
     }
 

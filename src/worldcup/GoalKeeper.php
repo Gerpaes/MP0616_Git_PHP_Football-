@@ -9,8 +9,9 @@ class Goalkeeper extends Player
 {
     private $globes; // property declared without type, like in original
 
-    public function __construct($globes)
+    public function __construct(int $age, string $position, $globes)
     {
+        parent::__construct($age, $position);
         $this->$globes = $globes;
     }
 

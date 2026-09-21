@@ -9,8 +9,9 @@ class Midfielder extends Player
 {
     protected $vision;
 
-    public function __construct($vision)
+    public function __construct(int $age, string $position, $vision)
     {
+        parent::__construct($age, $position);
         $this->$vision = $vision;
     }
 
