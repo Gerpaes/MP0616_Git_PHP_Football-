@@ -11,7 +11,7 @@ class Goalkeeper extends Player
 
     public function __construct($globes)
     {
-        $this->$globes = $globes;
+        $this->globes = $globes;
     }
 
     /**
