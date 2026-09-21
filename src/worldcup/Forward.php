@@ -11,8 +11,12 @@ class Forward extends Player
 
     public function __construct(int $age, string $position, $killer)
     {
+
         parent::__construct($age, $position);
-        $this->$killer = $killer;
+     
+
+        $this->killer = $killer;
+
     }
 
     public function drible()
