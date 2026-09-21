@@ -3,9 +3,9 @@
 namespace WorldCup;
 
 /**
- * Class to define the goalkeeper
+ * Class to define the GoalKeeper
  */
-class Goalkeeper extends Player
+class GoalKeeper extends Player
 {
     private $globes; // property declared without type, like in original
 
