@@ -16,19 +16,19 @@ class Person  {
     /**
      * Get the age
      */
-    public function isage() {
+    public function getAge() {
         return $this->age;
     }
 
     /**
      * Set the age
      */
-    public function setage($age) {
+    public function setAge($age) {
         $this->age = $age;
     }
 
     public function run() {
 
-        echo "running";
+        echo "running\n";
     }
 }

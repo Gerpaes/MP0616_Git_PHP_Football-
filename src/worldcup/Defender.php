@@ -6,9 +6,10 @@ class Defender extends Player
 {
     private $mark;
 
-    public function __construct($mark)
+    public function __construct(int $age, String $position, $mark)
     {
-        $this->$mark = $mark;
+        parent::__construct($age, $position);
+        $this->mark = $mark;
     }
     public function steal(Ball $ball)
     {
