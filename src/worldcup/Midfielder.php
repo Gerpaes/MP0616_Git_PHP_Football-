@@ -11,7 +11,7 @@ class Midfielder extends Player
 
     public function __construct($vision)
     {
-        $this->$vision = $vision;
+        $this->vision = $vision;
     }
 
     /**
