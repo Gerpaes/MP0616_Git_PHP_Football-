@@ -29,6 +29,6 @@ class Person  {
 
     public function run() {
 
-        echo "running";
+        echo "running\n";
     }
 }

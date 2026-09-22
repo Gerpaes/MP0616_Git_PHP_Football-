@@ -9,9 +9,14 @@ class Forward extends Player
 {
     private $killer;
 
-    public function __construct($killer)
+    public function __construct(int $age, string $position, $killer)
     {
+
+        parent::__construct($age, $position);
+     
+
         $this->killer = $killer;
+
     }
 
     public function drible()
@@ -35,7 +40,7 @@ class Forward extends Player
         $this->killer = $killer;
     }
 
-    public function kickBall(Ball $ball)
+    public function kick(Ball $ball)
     {
         $effects = [
             "with spin",

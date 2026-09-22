@@ -4,6 +4,20 @@ namespace WorldCup;
 
 use DateTime;
 
+
+
+require_once __DIR__ . '/Field.php';
+require_once __DIR__ . '/Team.php';
+require_once __DIR__ . '/Player.php';
+require_once __DIR__ . '/GoalKeeper.php';
+require_once __DIR__ . '/Defender.php';
+require_once __DIR__ . '/Midfielder.php';
+require_once __DIR__ . '/Ball.php';
+require_once __DIR__ . '/Forward.php';
+require_once __DIR__ . '/Coach.php';
+
+
+
 $game = new Game();
 $game->main();
 
@@ -101,7 +115,7 @@ class Game
 
         // create players team A
         $listA = [];
-        $listA[] = new Goalkeeper();
+        $listA[] = new GoalKeeper();
         $listA[] = new Defender();
         $listA[] = new Defender();
         $listA[] = new Defender();
@@ -115,7 +129,7 @@ class Game
 
         // create players team B
         $listB = [];
-        $listB[] = new Goalkeeper();
+        $listB[] = new GoalKeeper();
         $listB[] = new Defender();
         $listB[] = new Defender();
         $listB[] = new Defender();
@@ -178,7 +192,7 @@ class Game
                 $selectedPlayer->organize();
             } else if ($selectedPlayer instanceof Defender) {
                 $selectedPlayer->steal($this->getBall());
-            } else if ($selectedPlayer instanceof Goalkeeper) {
+            } else if ($selectedPlayer instanceof GoalKeeper) {
                 $selectedPlayer->block($this->getBall());
             }
         }

@@ -3,15 +3,18 @@
 namespace WorldCup;
 
 /**
- * Class to define the goalkeeper
+ * Class to define the GoalKeeper
  */
-class Goalkeeper extends Player
+class GoalKeeper extends Player
 {
     private $globes; // property declared without type, like in original
 
-    public function __construct($globes)
+    public function __construct(int $age, string $position, $globes)
     {
+
+        parent::__construct($age, $position);
         $this->globes = $globes;
+
     }
 
     /**
