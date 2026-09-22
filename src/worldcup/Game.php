@@ -157,6 +157,10 @@ class Game
         $this->start();
     }
 
+    public function loose(){
+        echo "we lost the game";
+    }
+
 
     public function start()
     {
