@@ -11,8 +11,7 @@ class Midfielder extends Player
 
     public function __construct(int $age, string $position, $vision)
     {
-        parent::__construct($age, $position);
-        $this->$vision = $vision;
+        $this->vision = $vision;
     }
 
     /**

@@ -146,6 +146,13 @@ class Game
         $this->start();
     }
 
+    public function win(){
+        echo "we won the game";
+    }
+    public function loose(){
+        echo "we lost the game";
+    }
+
 
     public function start()
     {
