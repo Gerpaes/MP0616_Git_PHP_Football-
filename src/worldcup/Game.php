@@ -104,6 +104,28 @@ class Game
         echo "making a substitution\n";
     }
 
+    private function createTeam(string $name): Team
+    {
+        $players = [
+            new GoalKeeper(30, "Goalkeeper","globes"),
+            new Defender(28, "Center Back","mark"),
+            new Defender(26, "Center Back","mark"),
+            new Defender(24, "Left Back","mark"),
+            new Defender(25, "Right Back","mark"),
+            new Midfielder(27, "Central Midfield","vision"),
+            new Midfielder(29, "Central Midfield","vision"),
+            new Midfielder(23, "Attacking Midfield","vision"),
+            new Midfielder(22, "Defensive Midfield","vision"),
+            new Forward(25, "Striker","killer"),
+            new Forward(21, "Winger","killer"),
+        ];
+
+        $team = new Team($name);
+        $team->setPlayers($players);
+        $team->setCoach(new Coach(48, "Ofensivo"));
+
+        return $team;
+    }
     public function main()
     {
         echo "starting application\n";
@@ -111,43 +133,10 @@ class Game
 
         $this->setField(new Field(100));
         $this->setDate(new DateTime());
-        $this->setBall(new Ball());
-
-        // create players team A
-        $listA = [];
-        $listA[] = new GoalKeeper();
-        $listA[] = new Defender();
-        $listA[] = new Defender();
-        $listA[] = new Defender();
-        $listA[] = new Defender();
-        $listA[] = new Midfielder();
-        $listA[] = new Midfielder();
-        $listA[] = new Midfielder();
-        $listA[] = new Midfielder();
-        $listA[] = new Forward();
-        $listA[] = new Forward();
-
-        // create players team B
-        $listB = [];
-        $listB[] = new GoalKeeper();
-        $listB[] = new Defender();
-        $listB[] = new Defender();
-        $listB[] = new Defender();
-        $listB[] = new Defender();
-        $listB[] = new Midfielder();
-        $listB[] = new Midfielder();
-        $listB[] = new Midfielder();
-        $listB[] = new Midfielder();
-        $listB[] = new Forward();
-        $listB[] = new Forward();
+        $this->setBall(new Ball("leather"));
 
         $teamA = new Team("NewTeam");
-        $teamA->setPlayers($listA);
-        $teamA->setCoach(new Coach());
-
         $teamB = new Team("Maped");
-        $teamB->setPlayers($listB);
-        $teamB->setCoach(new Coach());
 
         $teams = [];
         $teams[] = $teamA;
